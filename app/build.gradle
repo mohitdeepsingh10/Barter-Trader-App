@@ -1,0 +1,74 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+}
+
+android {
+    namespace 'com.example.group4planninggame'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.group4planninggame"
+        minSdk 31
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            merges += "META-INF/LICENSE.md"
+            merges += "META-INF/LICENSE-notice.md"
+        }
+    }
+}
+
+dependencies {
+    implementation libs.uiautomator
+    implementation libs.play.services.maps
+    implementation libs.recyclerview
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.fragment
+    implementation libs.firebase.database
+    implementation libs.play.services.location
+    implementation libs.firebase.ui.database
+
+    testImplementation libs.monitor
+    testImplementation libs.ext.junit
+    testImplementation libs.junit
+    testImplementation libs.mockito.mockito.core
+    testImplementation libs.mockito.android
+    testImplementation libs.mockito.core.v5142
+    testImplementation libs.junit.jupiter
+    testImplementation 'org.mockito:mockito-core:5.14.2'
+
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    androidTestImplementation 'androidx.test:runner:1.6.1'
+    androidTestImplementation 'androidx.test:rules:1.6.1'
+    androidTestImplementation libs.runner.v161
+    androidTestImplementation libs.rules.v161
+    androidTestImplementation libs.mockito.android.v5142
+    androidTestImplementation libs.junit.jupiter
+    androidTestImplementation libs.espresso.core
+    androidTestImplementation 'com.google.android.gms:play-services-location:21.3.0'
+    androidTestImplementation 'com.google.android.gms:play-services-maps:18.0.2'
+    androidTestImplementation 'com.firebaseui:firebase-ui-database:8.0.0'
+}

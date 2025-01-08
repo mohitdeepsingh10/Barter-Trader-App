@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Group 4 Planning Game</string>
+    <string-array name="RoleList">
+        <item>Select Role</item>
+        <item>Receiver</item>
+        <item>Provider</item>
+    </string-array>
+    <string-array name="ProfilePage">
+        <item>Login</item>
+        <item>Register</item>
+    </string-array>
+    <string-array name="ItemCondition">
+        <item>Select Item Condition</item>
+        <item>New</item>
+        <item>Like New</item>
+        <item>Good</item>
+        <item>Fair</item>
+        <item>As is</item>
+    </string-array>
+    <string-array name="ItemCategory">
+        <item>Select Category</item>
+        <item>Antiques</item>
+        <item>Art &amp; Craft Supplies</item>
+        <item>Automotive Parts</item>
+        <item>Books</item>
+        <item>Camping &amp; Hiking Gear</item>
+        <item>Clothing</item>
+        <item>Collectibles</item>
+        <item>Computers &amp; Accessories</item>
+        <item>Electronics</item>
+        <item>Furniture</item>
+        <item>Garden &amp; Outdoor</item>
+        <item>Health &amp; Beauty</item>
+        <item>Home Appliances</item>
+        <item>Jewelry &amp; Accessories</item>
+        <item>Kitchenware</item>
+        <item>Musical Instruments</item>
+        <item>Office Supplies</item>
+        <item>Pet Supplies</item>
+        <item>Phones &amp; Tablets</item>
+        <item>Photography Equipment</item>
+        <item>Sports Equipment</item>
+        <item>Tools &amp; Hardware</item>
+        <item>Toys &amp; Games</item>
+        <item>Video Games &amp; Consoles</item>
+    </string-array>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="login_error">*Something went wrong. Make sure you enter you Email and password correctly.*</string>
+    <string name="registered">Already have an account?</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="search">Search...</string>
+    <string name="status_text">STATUS: %1$s</string>
+    <string name="no_products_found">No Products Found</string>
+
+</resources>

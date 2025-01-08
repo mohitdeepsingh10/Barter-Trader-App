@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1062067564868",
+    "firebase_url": "https://group-4-planning-game-default-rtdb.firebaseio.com",
+    "project_id": "group-4-planning-game",
+    "storage_bucket": "group-4-planning-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062067564868:android:53bbb2be6c2c3767c82711",
+        "android_client_info": {
+          "package_name": "com.example.group4planninggame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOyzSYH1LwcFFCwba3MU5AJlh160ewadA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

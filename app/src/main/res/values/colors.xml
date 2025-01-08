@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="onErrorDark">#FFFFAAAA</color>
+    <color name="onSuccessDark">#FFAAFFAA</color>
+    <color name="onPendingDark">#FFFFFFAA</color>
+
+    <color name="onErrorLight">#FFAA0000</color>
+    <color name="onSuccessLight">#FF00AA00</color>
+    <color name="onPendingLight">#FFDDAA00</color>
+</resources>

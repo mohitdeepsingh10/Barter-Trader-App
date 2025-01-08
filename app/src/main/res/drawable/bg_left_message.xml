@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?attr/colorSecondaryContainer" /> <!-- Replace with your desired color for the left message background -->
+    <corners android:radius="12dp" /> <!-- Rounds the corners of the rectangle -->
+    <padding android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp" />
+</shape>

@@ -1,0 +1,64 @@
+[versions]
+activityVersion = "1.9.3"
+agp = "8.6.1"
+coreTesting = "2.2.0"
+fragment = "1.8.4"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.6.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+googleGmsGoogleServices = "4.4.2"
+firebaseDatabase = "21.0.0"
+mockitoAndroid = "4.11.0"
+mockitoAndroidVersion = "5.14.2"
+mockitoCore = "4.11.0"
+mockitoCoreVersion = "5.14.2"
+playServicesLocation = "21.3.0"
+rules = "1.6.2"
+rulesVersion = "1.6.1"
+runner = "1.6.1"
+uiautomator = "2.3.0"
+monitor = "1.7.1"
+playServicesMaps = "19.0.0"
+googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
+recyclerview = "1.3.2"
+firebaseUiDatabase = "8.0.0"
+junitJupiter = "5.8.1"
+
+[libraries]
+activity-v193 = { module = "androidx.activity:activity", version.ref = "activityVersion" }
+core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
+fragment = { module = "androidx.fragment:fragment", version.ref = "fragment" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-ui-database = { group = "com.firebaseui", name = "firebase-ui-database", version.ref = "firebaseUiDatabase" }
+mockito-android = { module = "org.mockito:mockito-android", version.ref = "mockitoAndroid" }
+mockito-android-v5142 = { module = "org.mockito:mockito-android", version.ref = "mockitoAndroidVersion" }
+mockito-core = { module = "org.mockito:mockito-core" }
+mockito-core-v5142 = { module = "org.mockito:mockito-core", version.ref = "mockitoCoreVersion" }
+mockito-mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+rules = { module = "androidx.test:rules", version.ref = "rules" }
+rules-v161 = { module = "androidx.test:rules", version.ref = "rulesVersion" }
+runner = { module = "androidx.test:runner", version.ref = "rules" }
+runner-v161 = { module = "androidx.test:runner", version.ref = "runner" }
+uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "uiautomator" }
+monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+google-android-libraries-mapsplatform-secrets-gradle-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "googleAndroidLibrariesMapsplatformSecretsGradlePlugin" }
+

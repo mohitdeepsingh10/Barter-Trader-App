@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/updateBackButton"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:icon="@drawable/ic_back"
+        app:layout_constraintBottom_toTopOf="@+id/LocationName"
+        app:layout_constraintEnd_toStartOf="@+id/updatePrefs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updatePrefs" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesRecyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoriesRecyclerView"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/item_border_background"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocationName" />
+
+    <Button
+        android:id="@+id/setLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Set Location"
+        app:layout_constraintEnd_toEndOf="@+id/DistanceInput"
+        app:layout_constraintStart_toStartOf="@+id/DistanceInput"
+        app:layout_constraintTop_toBottomOf="@+id/DistanceInput" />
+
+    <EditText
+        android:id="@+id/DistanceInput"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/item_background"
+        android:ems="10"
+        android:padding="8dp"
+        android:hint="Search radius (meters)"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocationInput" />
+
+    <TextView
+        android:id="@+id/LocationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/LocationInput"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="@drawable/item_background"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorySpinner" />
+
+    <TextView
+        android:id="@+id/updatePrefs"
+        android:layout_width="292dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:text="Update Preferences"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/LocationName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
